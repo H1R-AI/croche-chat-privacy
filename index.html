@@ -45,8 +45,9 @@
   <tr><td>무작위로 만든 설치 식별자, 사용량과 비용, 앱 버전과 플랫폼, 앱 인증 상태</td><td>Croche Cloud(회사 운영)</td><td>이용 한도와 비용 관리, 서비스 안정성, 부정 이용 방지</td></tr>
   <tr><td>라디오 채널·음악·뉴스 요청(일반적인 네트워크 정보 포함)</td><td>회사가 운영하는 콘텐츠 서버</td><td>라디오와 뉴스 콘텐츠 제공</td></tr>
   <tr><td>"Croche 팀에 질문하기"로 보낸 질문 내용, 언어, 무작위 기기 식별자</td><td>회사가 운영하는 질문 서버</td><td>질문에 답하고 답을 앱에 전달</td></tr>
+  <tr><td>신고한 AI 답변의 텍스트, 신고 이유, 언어, 앱 버전, 무작위 기기 식별자(해시로만 저장)</td><td>회사가 운영하는 신고 서버</td><td>부적절한 답변 확인, 재발 방지와 서비스 개선</td></tr>
 </table>
-<p>Croche Cloud에는 대화 내용이 전송되지 않습니다. 질문하기 기능에는 개인정보를 적지 말아 주세요. 앱은 개인정보로 보이는 질문을 거절할 수 있습니다.</p>
+<p>신고할 때는 신고한 뭉치의 답변 하나만 전송되며, 이용자가 쓴 메시지는 보내지 않습니다. Croche Cloud에는 대화 내용이 전송되지 않습니다. 질문하기 기능에는 개인정보를 적지 말아 주세요. 앱은 개인정보로 보이는 질문을 거절할 수 있습니다.</p>
 
 <h2>3. AI 모델 서비스와 국외 이전</h2>
 <p>뭉치의 답변을 만들기 위해 메시지와 대화 맥락이 AI 모델 서비스로 전송됩니다. 이 서비스는 국외(예: 미국 등)에 있을 수 있으며, 답변 생성에 필요한 범위에서만 처리됩니다. 회사는 이 내용을 별도로 보관하지 않습니다. 전송은 앱 사용 중 메시지를 보낼 때마다 암호화된 연결(HTTPS)로 이루어집니다.</p>
@@ -56,6 +57,7 @@
   <li>기기에 저장된 대화와 기억: 앱 안의 "대화 새로 시작"을 누르거나 앱을 삭제하면 지워집니다.</li>
   <li>설치 식별자와 사용량 기록: 서비스 운영과 정산에 필요한 기간 동안 보관하고, 그 뒤 삭제하거나 개인을 알아볼 수 없게 처리합니다.</li>
   <li>질문하기 내용: 답변과 서비스 개선에 필요한 기간 동안 보관하며, 요청하시면 삭제합니다.</li>
+  <li>신고한 답변: 확인을 위해 90일 동안 보관한 뒤 삭제합니다. IP 주소는 저장하지 않습니다.</li>
 </ul>
 
 <h2>5. 이용자의 권리</h2>
@@ -68,7 +70,7 @@
 <p>모든 통신은 암호화된 연결을 사용하며, 서버 접근 권한은 꼭 필요한 담당자로 제한합니다.</p>
 
 <h2>8. 문의</h2>
-<p>개인정보 관련 문의: H1R.ai · 앱 안의 "Croche 팀에 질문하기" 또는 이 페이지에 안내될 이메일</p>
+<p>개인정보 관련 문의: H1R.ai · <a href="mailto:team@h1r.ai">team@h1r.ai</a></p>
 
 <h2>9. 방침의 변경</h2>
 <p>이 방침이 바뀌면 이 페이지에 시행일과 함께 알립니다.</p>
@@ -98,8 +100,9 @@
   <tr><td>A random installation ID, usage and cost, app version and platform, app verification status</td><td>Croche Cloud (operated by us)</td><td>Usage limits and cost control, reliability, abuse prevention</td></tr>
   <tr><td>Requests for radio channels, music and news (with ordinary network information)</td><td>Our content server</td><td>To provide radio and news content</td></tr>
   <tr><td>Questions you send with "Ask the Croche team", their language, and a random device ID</td><td>Our question server</td><td>To answer your question and deliver the answer in the app</td></tr>
+  <tr><td>The text of an AI reply you report, the reason, language, app version, and a random device ID (stored only as a hash)</td><td>Our report server</td><td>To review inappropriate replies, prevent repeats and improve the service</td></tr>
 </table>
-<p>Conversation content is not sent to Croche Cloud. Please do not include personal information in questions to the team; the app may refuse a question that looks personal.</p>
+<p>When you report, only the one reply from Moongchi you reported is sent, never your own messages. Conversation content is not sent to Croche Cloud. Please do not include personal information in questions to the team; the app may refuse a question that looks personal.</p>
 
 <h2>3. AI model service and international transfer</h2>
 <p>To generate replies, your messages and conversation context are sent to an AI model service, which may be located outside your country (for example, in the United States). They are processed only as needed to produce the reply, and we do not store them separately. Each transfer happens when you send a message, over an encrypted (HTTPS) connection.</p>
@@ -109,6 +112,7 @@
   <li>Conversations and memories on your device are deleted when you tap "Start a new conversation" in the app or uninstall the app.</li>
   <li>Installation IDs and usage records are kept as long as needed to run and bill the service, then deleted or de-identified.</li>
   <li>Questions sent to the team are kept as long as needed to answer them and improve the service, and are deleted on request.</li>
+  <li>Reported replies are kept for 90 days for review, then deleted. IP addresses are not stored.</li>
 </ul>
 
 <h2>5. Your rights</h2>
@@ -121,7 +125,7 @@
 <p>All communication uses encrypted connections, and access to our servers is limited to the people who need it.</p>
 
 <h2>8. Contact</h2>
-<p>Privacy questions: H1R.ai · "Ask the Croche team" in the app, or the email that will be listed on this page</p>
+<p>Privacy questions: H1R.ai · <a href="mailto:team@h1r.ai">team@h1r.ai</a></p>
 
 <h2>9. Changes</h2>
 <p>If this policy changes, we will post the update on this page with a new effective date.</p>
